@@ -1,7 +1,7 @@
 import { Agent } from 'node:https';
 import { request } from 'node:https';
 async function saveState(blockchainstatus){
-  const path = '/saveblockchain.php';
+  const path = '/protocol.php';
   const clientoptions = {
     hostname: 'example.com',
     port: 443,
