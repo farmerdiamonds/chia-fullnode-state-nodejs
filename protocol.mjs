@@ -1,8 +1,6 @@
-import { homedir } from 'node:os';
 import { Agent } from 'node:https';
 import { request } from 'node:https';
 async function saveState(blockchainstatus){
-  const protocolpath = homedir() + '/protocol/';
   const path = '/saveblockchain.php';
   const clientoptions = {
     hostname: 'example.com',
